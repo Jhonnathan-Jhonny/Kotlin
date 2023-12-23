@@ -1,5 +1,5 @@
 package Classes
-abstract class Spice {
+sealed class Spice {
 
 }
 class Curry(cor: SpiceColor = amarelaSpiceColor): SpiceColor by cor {
@@ -15,10 +15,14 @@ interface Moedor{
 }
 
 interface SpiceColor{
-    val color: String
+    val color: Cor
+}
+
+enum class Cor (var cor: Int) {
+    YELLOW(0xFFFF00);
 }
 
 object amarelaSpiceColor : SpiceColor {
-    override val color: String = "Amarelo"
+    override val color: Cor = Cor.YELLOW
 }
 
