@@ -1,8 +1,6 @@
 package Aquarium.Generics
 
 open class WaterSupply(var needsProcessing: Boolean)
-
-
 // Classes que herdam de WaterSupply
 class TapWater : WaterSupply(true) {
     fun addChemicalCleaners() {

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="12a4d0aa-bbe2-42e5-a577-8a3703df71ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Aquarium/src/Aquarium/Generics/WaterSupply.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Aquarium/src/Aquarium/Generics/WaterSupply.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/libraries/jetbrains_kotlin_reflect.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/Hello_Kotlin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/lib/kotlin-reflect-1.9.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/Anotacoes/Plant.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/Classes/AquariumFish.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/Classes/Book.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/Classes/ClasseContainer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/Classes/Livros.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/Classes/Spice.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/Genericos/Veiculos.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/QuebrasRotuladas/Rotulos.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/mainAquariumFish.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/mainSpice.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/pratica1.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/pratica2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/pratica3.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/pratica4.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/pratica5.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/pratica6.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/praticaBásica.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/praticaFuncao1.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/praticaFuncao2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/praticaFuncao3.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/praticaFuncao4.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/praticaLambda1.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hello_Kotlin/src/main/kotlin/testMain.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2aMw8LglrL8m71bmvEEr4vBfwz5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-azul-20.0.2-f644763e9732-d86f2a68" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12a4d0aa-bbe2-42e5-a577-8a3703df71ec" name="Changes" comment="" />
+      <created>1704141596611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704141596611</updated>
+      <workItem from="1704141597680" duration="175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
