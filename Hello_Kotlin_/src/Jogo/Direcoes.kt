@@ -2,7 +2,7 @@ package Jogo
 
 enum class Direcoes{NORTE, SUL, LESTE, OESTE, INICIO, FIM}
 
-class Jogo{
+class Jogo {
     var caminho: MutableList<Direcoes> = mutableListOf(Direcoes.INICIO)
     val norte = {caminho.add(Direcoes.NORTE)}
     val sul = {caminho.add(Direcoes.SUL)}
@@ -16,6 +16,17 @@ class Jogo{
         false
     }
 
+    fun mover(onde: () -> Unit){}
+    fun fazerMover(move: String?){
+        when(move){
+            "n" -> mover{norte}
+            "s" -> mover{sul}
+            "l" -> mover {leste}
+            "o" -> mover {oeste}
+            else -> mover {fim}
+        }
+    }
+
     private fun exibirCaminhos(){
         for (direction in caminho) {
             print("$direction -> ")
@@ -25,21 +36,10 @@ class Jogo{
 }
 
 fun main(){
-    val jogo = Jogo()
-    jogo.norte
-    jogo.sul
-    jogo.leste
-    jogo.oeste
-    jogo.fim
-
-    println("\nContinuando o trajeto...\n")
-
-    jogo.norte
-    jogo.sul
-    jogo.leste
-    jogo.oeste
-    jogo.fim
-
-    println("\nTrajeto final:")
-    println("Trajeto: ${jogo.caminho}")
+    val jogador1 = Jogo()
+    while (true){
+        println("Enter a direction: n/s/l/o:")
+        val local = readlnOrNull()
+        jogador1.fazerMover(local)
+    }
 }
