@@ -1,19 +1,29 @@
 package Classes
 
 import Interfaces.BasicSteels
+import kotlin.time.Duration
 
 open class TaskManager: BasicSteels {
     var taskList: MutableList<Task?> = mutableListOf()
+    // Para evitar a criação de um construtur secundário utiliza-se o "init"
+    // portanto, é executado antes de todo o codigo
+    init {
+        println("Usuário criado !!!")
+    }
     override fun adicionarTarefa() {
         print("Título: ")
         val title = readln()
         print("Descrição: ")
         val description = readln()
-        print("Data de vencimento: ")
-        val dueDate = readln().toInt()
+        print("Data de vencimento(DIA/MES/ANO): ")
+        var dueDate: Triple<Int,Int,Int> = Triple(readlnOrNull()!!.toInt(),readlnOrNull()!!.toInt(),readlnOrNull()!!.toInt())
         print("Status: ")
         val status = readln().toBoolean()
         taskList.add(Task(title,description,dueDate,status))
+        println()
+        print("Tempo de conclução: ")
+        tempoDeVencimento(title)
+        println()
     }
 
     override fun concluirTarefa() {
@@ -51,6 +61,20 @@ open class TaskManager: BasicSteels {
         for (objeto in filtro(escolha)){
             println("${objeto!!.title} - ")
         }
+    }
+
+    override fun tempoDeVencimento(titulo: String): Triple<Int, Int, Int> {
+        for (objeto in taskList){
+            if (objeto!!.title == titulo){
+                var dataInicio: Triple<Int,Int,Int> = Triple(objeto.dataInicio.dayOfMonth,objeto.dataInicio.monthValue,objeto.dataInicio.year)
+                var (diaI,mesI,anoI) = dataInicio
+                var (diaF,mesF,anoF) = objeto.duaDate
+                var diasParaVencimento: Triple<Int,Int,Int> = Triple(diaI - diaF,mesI - mesF, anoI- anoF)
+                println("${kotlin.math.abs(diasParaVencimento.first)} dia(s),${kotlin.math.abs(diasParaVencimento.second)} messes, e ${kotlin.math.abs(diasParaVencimento.third)} ano(s)")
+                return diasParaVencimento
+            }
+        }
+        return Triple(0,0,0)
     }
 
 }
