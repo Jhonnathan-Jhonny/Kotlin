@@ -16,14 +16,6 @@ open class TaskManager: BasicSteels {
         taskList.add(Task(title,description,dueDate,status))
     }
 
-    override fun visualizarTarefaNaoConcluida() {
-        TODO("Not yet implemented")
-    }
-
-    override fun visualizarTarefaConcluida() {
-        TODO("Not yet implemented")
-    }
-
     override fun concluirTarefa() {
         TODO("Not yet implemented")
     }
@@ -50,6 +42,14 @@ open class TaskManager: BasicSteels {
             for (objeto in taskList.asSequence().filter { !it!!.status }){
                 println("${objeto!!.title} - ")
             }
+        }
+    }
+
+    // Filtrando as tarefas que tenham aquela letra, e passando o filtro como um lambda
+    override fun tasksWithLetters(filtro: (String) -> List<Task?>) {
+        var escolha= readln()
+        for (objeto in filtro(escolha)){
+            println("${objeto!!.title} - ")
         }
     }
 

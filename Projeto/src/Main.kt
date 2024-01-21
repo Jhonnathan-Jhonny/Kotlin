@@ -3,8 +3,7 @@ import Classes.TaskManager
 fun mainMenu(user: TaskManager){
     do {
         println("1- Adicionar tarefa.")
-        println("2- Visualizar tarefas a concluir.")
-        println("3- Visualizar tarefas concluidas.")
+        println("2- Tarefas com a letra...")
         println("4- Concluir tarefa.")
         println("5- Editar tarefa.")
         println("6- Excluir tarefa.")
@@ -13,6 +12,7 @@ fun mainMenu(user: TaskManager){
         var option = readlnOrNull()?.toInt()?:0
         when (option) {
             1 -> user.adicionarTarefa()
+            2 -> user.tasksWithLetters { letra:String -> user.taskList.filter {  it!!.title.contains(letra) } }
             7 -> filterMenu(user)
             else -> break
         }
