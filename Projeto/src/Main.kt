@@ -20,7 +20,16 @@ fun mainMenu(user: TaskManager){
 }
 
 fun filterMenu(user: TaskManager){
-    user.filterTaskCompleted()
+    println("Filtros Disponíveis: ")
+    println("1- Tarefas Completas.")
+    println("2- Tarefas incompletas.")
+    var option = readlnOrNull()?.toInt()
+    when(option){
+        1 -> user.filterTask(option)
+        2 -> user.filterTask(option)
+        else -> println("ERRO!!! Tente novamente.")
+    }
+
 }
 
 fun main() {

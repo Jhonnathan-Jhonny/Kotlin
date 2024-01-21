@@ -36,11 +36,21 @@ open class TaskManager: BasicSteels {
         TODO("Not yet implemented")
     }
 
-    override fun filterTaskCompleted() {
-        for (objeto in taskList.filter { it!!.status }) {
-            print("${objeto!!.title} - ")
+    //Utilizando filtro de Kotlin
+    override fun filterTask(option: Int) {
+        if(option == 1) {
+            // Filtro ansioso
+            for (objeto in taskList.filter { it!!.status }) {
+                print("${objeto!!.title} - ")
+            }
+            println()
         }
-        println()
+        else {
+            //Filtro preguiçoso "asSequence()"
+            for (objeto in taskList.asSequence().filter { !it!!.status }){
+                println("${objeto!!.title} - ")
+            }
+        }
     }
 
 }

@@ -9,5 +9,5 @@ interface BasicSteels {
     fun concluirTarefa()
     fun editarTarefa()
     fun exluirTarefa()
-    fun filterTaskCompleted()
+    fun filterTask(option: Int)
 }
