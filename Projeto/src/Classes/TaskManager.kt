@@ -30,13 +30,14 @@ open class TaskManager: BasicSteels {
         TODO("Not yet implemented")
     }
 
+    override fun mostrarTarefas() {
+        taskList.forEach { println(it!!.title) }
+    }
+
     override fun editarTarefa() {
         TODO("Not yet implemented")
     }
 
-    override fun exluirTarefa() {
-        TODO("Not yet implemented")
-    }
 
     //Utilizando filtro de Kotlin
     override fun filterTask(option: Int) {

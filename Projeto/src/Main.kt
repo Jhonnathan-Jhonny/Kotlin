@@ -1,9 +1,11 @@
 import Classes.TaskManager
+import Classes.delete
 
 fun mainMenu(user: TaskManager){
     do {
         println("1- Adicionar tarefa.")
         println("2- Tarefas com a letra...")
+        println("3- Mostrar tarefas.")
         println("4- Concluir tarefa.")
         println("5- Editar tarefa.")
         println("6- Excluir tarefa.")
@@ -13,6 +15,8 @@ fun mainMenu(user: TaskManager){
         when (option) {
             1 -> user.adicionarTarefa()
             2 -> user.tasksWithLetters { letra:String -> user.taskList.filter {  it!!.title.contains(letra) } }
+            3 -> user.mostrarTarefas()
+            6 -> user.delete()
             7 -> filterMenu(user)
             else -> break
         }
