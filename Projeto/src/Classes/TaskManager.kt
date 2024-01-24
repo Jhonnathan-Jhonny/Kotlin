@@ -1,9 +1,7 @@
 package Classes
 
 import Interfaces.BasicSteels
-import kotlin.time.Duration
-
-open class TaskManager: BasicSteels {
+open class TaskManager(title: String, description: String, duaDate: Triple<Int, Int, Int>,status: Boolean) : Task(title, description, duaDate, status),BasicSteels {
     var taskList: MutableList<Task?> = mutableListOf()
     // Para evitar a criação de um construtur secundário utiliza-se o "init"
     // portanto, é executado antes de todo o codigo
@@ -16,8 +14,12 @@ open class TaskManager: BasicSteels {
         print("Descrição: ")
         val description = readln()
         print("Data de vencimento(DIA/MES/ANO): ")
-        var dueDate: Triple<Int,Int,Int> = Triple(readlnOrNull()!!.toInt(),readlnOrNull()!!.toInt(),readlnOrNull()!!.toInt())
-        print("Status: ")
+        val dueDate: Triple<Int, Int, Int> = Triple(
+            readLine()?.padStart(2, '0')?.toIntOrNull() ?: 0,
+            readLine()?.padStart(2, '0')?.toIntOrNull() ?: 0,
+            readLine()?.padStart(4, '0')?.toIntOrNull() ?: 0
+        )
+        println("Status: ")
         val status = readln().toBoolean()
         taskList.add(Task(title,description,dueDate,status))
         println()

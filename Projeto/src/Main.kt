@@ -1,3 +1,4 @@
+import Classes.Herança.TaskSchool
 import Classes.TaskManager
 import Classes.delete
 
@@ -11,7 +12,7 @@ fun mainMenu(user: TaskManager){
         println("6- Excluir tarefa.")
         println("7- Filtrar")
         println("8- Sair.")
-        var option = readlnOrNull()?.toInt()?:0
+        val option = readlnOrNull()?.toInt()?:0
         when (option) {
             1 -> user.adicionarTarefa()
             2 -> user.tasksWithLetters { letra:String -> user.taskList.filter {  it!!.title.contains(letra) } }
@@ -37,6 +38,11 @@ fun filterMenu(user: TaskManager){
 }
 
 fun main() {
-    val user1 = TaskManager()
+    val user1 = TaskManager("","",Triple(0,0,0),false)
     mainMenu(user1)
+
+
+//    val taskSchool = TaskSchool(0.0,"","",Triple(0,0,0),false)
+//    taskSchool.adicionarTarefa()
+
 }
