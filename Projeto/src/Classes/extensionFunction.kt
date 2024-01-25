@@ -10,5 +10,5 @@ fun TaskManager.delete():Task {
         }
     }
     println("Tarefa inexistente!")
-    return Task("", "", Triple(0, 0, 0))
+    return Task("", "", Triple(0, 0, 0),true)
 }

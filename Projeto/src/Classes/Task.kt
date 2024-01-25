@@ -1,16 +1,16 @@
 package Classes
 
-import java.time.LocalDate
+import Interface_Abastrata.TaskBase
 
-open class Task (val title: String, val description: String, val duaDate: Triple<Int,Int,Int>, val status: Boolean = false){
-    init {
-        println("Tarefa criada !!!")
+open class Task (
+    title: String,
+    description: String,
+    duaDate: Triple<Int, Int, Int>,
+    status: Boolean):
+    TaskBase(title, description, duaDate, status) {
+    override fun concluir() {
+        TODO("Not yet implemented")
     }
-    var dataInicio: LocalDate = LocalDate.now()
-            get() = field   // Retorna o valor atual da propriedade
-            set(value) {
-                field = value  // Define o valor da propriedade
-            }
-    val getDuaDate: Unit
-        get() = println("${duaDate.first}/${duaDate.second}/${duaDate.third}")
+
+
 }

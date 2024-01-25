@@ -1,10 +1,9 @@
-package Interfaces
+package Interface_Abastrata
 
 import Classes.Task
 
 interface BasicSteels {
     fun adicionarTarefa()
-    fun concluirTarefa()
     fun mostrarTarefas()
     fun editarTarefa()
     //Utilizando apenas filtros dentro da função

@@ -1,7 +1,13 @@
 package Classes
 
-import Interfaces.BasicSteels
-open class TaskManager(title: String, description: String, duaDate: Triple<Int, Int, Int>,status: Boolean) : Task(title, description, duaDate, status),BasicSteels {
+import Classes.deDados.DadosTask
+import Interface_Abastrata.BasicSteels
+import Interface_Abastrata.TaskBase
+
+open class TaskManager(title: String, description: String, duaDate: Triple<Int, Int, Int>, status: Boolean) :
+    Task(title, description, duaDate, status),
+    BasicSteels
+{
     var taskList: MutableList<Task?> = mutableListOf()
     // Para evitar a criação de um construtur secundário utiliza-se o "init"
     // portanto, é executado antes de todo o codigo
@@ -28,12 +34,12 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
         println()
     }
 
-    override fun concluirTarefa() {
-        TODO("Not yet implemented")
-    }
+
 
     override fun mostrarTarefas() {
-        taskList.forEach { println(it!!.title) }
+        for (i in taskList){
+            println(DadosTask(i!!.title,i.description,i.duaDate,i.status))
+        }
     }
 
     override fun editarTarefa() {
@@ -80,4 +86,21 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
         return Triple(0,0,0)
     }
 
+    override fun concluir() {
+        println("Qual tarefa deseja concluir?")
+        mostrarTarefas()
+        val tarefaNome = readln()
+        for (i in taskList){
+            if (i!!.title == tarefaNome){
+                if(!i.status){
+                    i.status = true
+                    println("Tarefa marcada como concluía.")
+                }
+                else{
+                    println("Tarefa já foi concluía.")
+                }
+            }
+        }
+        println("Tarefa não encontrada!")
+    }
 }
