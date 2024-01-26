@@ -1,4 +1,4 @@
-import Classes.Herança.TaskSchool
+import Classes.Enum.StatusTask
 import Classes.TaskManager
 import Classes.delete
 
@@ -15,7 +15,7 @@ fun mainMenu(user: TaskManager){
         val option = readlnOrNull()?.toInt()?:0
         when (option) {
             1 -> user.adicionarTarefa()
-            2 -> user.tasksWithLetters { letra:String -> user.taskList.filter {  it!!.title.contains(letra) } }
+            2 -> user.tasksWithLetters { letra:String -> user.listaTarefa().filter {  it!!.title.contains(letra) } }
             3 -> user.mostrarTarefas()
             4-> user.concluir()
             6 -> user.delete()
@@ -27,8 +27,8 @@ fun mainMenu(user: TaskManager){
 
 fun filterMenu(user: TaskManager){
     println("Filtros Disponíveis: ")
-    println("1- Tarefas Completas.")
-    println("2- Tarefas incompletas.")
+    println("1- Tarefas incompletas.")
+    println("2- Tarefas Ccompletas.")
     var option = readlnOrNull()?.toInt()
     when(option){
         1 -> user.filterTask(option)
@@ -39,7 +39,7 @@ fun filterMenu(user: TaskManager){
 }
 
 fun main() {
-    val user1 = TaskManager("","",Triple(0,0,0),false)
+    val user1 = TaskManager("","",Triple(0,0,0),StatusTask.PENDENTE)
     mainMenu(user1)
 
 

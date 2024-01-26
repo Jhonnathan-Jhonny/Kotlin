@@ -1,10 +1,11 @@
 package Classes
 
+import Classes.Enum.StatusTask
 import Classes.Object.TaskObject
 import Interface_Abastrata.BasicSteels
 
 
-open class TaskManager(title: String, description: String, duaDate: Triple<Int, Int, Int>, status: Boolean) :
+open class TaskManager(title: String, description: String, duaDate: Triple<Int, Int, Int>, status: StatusTask) :
     Task(title, description, duaDate, status),
     BasicSteels
 {
@@ -24,6 +25,10 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
         obj.mostrarTarefas()
     }
 
+    fun listaTarefa(): MutableList<Task?>{
+        return obj.informarLista()
+    }
+
     override fun editarTarefa() {
         TODO("Not yet implemented")
     }
@@ -33,15 +38,15 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
     override fun filterTask(option: Int) {
         if(option == 1) {
             // Filtro ansioso
-            for (objeto in obj.taskList.filter { it!!.status }) {
-                print("${objeto!!.title} - ")
+            for (objeto in obj.taskList.filter { it!!.status == StatusTask.PENDENTE }) {
+                println("${objeto!!.title} - ${objeto.status} - ${objeto.description} -${objeto.duaDate} ")
             }
             println()
         }
         else {
             //Filtro preguiçoso "asSequence()"
-            for (objeto in obj.taskList.asSequence().filter { !it!!.status }){
-                println("${objeto!!.title} - ")
+            for (objeto in obj.taskList.asSequence().filter { it!!.status == StatusTask.CONCLUIDA}){
+                println("${objeto!!.title} - ${objeto.status} - ${objeto.description} -${objeto.duaDate} ")
             }
         }
     }
@@ -64,8 +69,8 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
         val tarefaNome = readln()
         for (i in obj.taskList){
             if (i!!.title == tarefaNome){
-                if(!i.status){
-                    i.status = true
+                if(i.status == StatusTask.PENDENTE){
+                    i.status = StatusTask.CONCLUIDA
                     println("Tarefa marcada como concluía.")
                 }
                 else{

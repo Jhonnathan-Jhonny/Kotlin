@@ -1,5 +1,6 @@
 package Classes.Object
 
+import Classes.Enum.StatusTask
 import Classes.Task
 import Classes.deDados.DadosTask
 
@@ -17,8 +18,7 @@ class TaskObject {
             readLine()?.padStart(2, '0')?.toIntOrNull() ?: 0,
             readLine()?.padStart(4, '0')?.toIntOrNull() ?: 0
         )
-        println("Status: ")
-        val status = readln().toBoolean()
+        val status = StatusTask.PENDENTE
         taskList.add(Task(title,description,dueDate,status))
         println()
         print("Tempo de conclução: ")
@@ -33,6 +33,11 @@ class TaskObject {
             println(DadosTask(i!!.title,i.description,i.duaDate,i.status))
         }
     }
+
+    fun informarLista():MutableList<Task?>{
+        return taskList
+    }
+
     fun tempoDeVencimento(titulo: String): Triple<Int, Int, Int> {
         for (objeto in taskList) {
             if (objeto!!.title == titulo) {

@@ -1,14 +1,16 @@
 package Classes
 
+import Classes.Enum.StatusTask
+
 fun TaskManager.delete():Task {
     println("Digite o titulo da tarefa que deseja excluir!")
     var title = readln()
-    for (objeto in taskList) {
+    for (objeto in listaTarefa()) {
         if (objeto!!.title == title) {
-            taskList.remove(objeto)
+            listaTarefa().remove(objeto)
             return objeto
         }
     }
     println("Tarefa inexistente!")
-    return Task("", "", Triple(0, 0, 0),true)
+    return Task("", "", Triple(0, 0, 0),StatusTask.PENDENTE)
 }
