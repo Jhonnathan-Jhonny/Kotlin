@@ -1,45 +1,27 @@
 package Classes
 
-import Classes.deDados.DadosTask
+import Classes.Object.TaskObject
 import Interface_Abastrata.BasicSteels
-import Interface_Abastrata.TaskBase
+
 
 open class TaskManager(title: String, description: String, duaDate: Triple<Int, Int, Int>, status: Boolean) :
     Task(title, description, duaDate, status),
     BasicSteels
 {
-    var taskList: MutableList<Task?> = mutableListOf()
     // Para evitar a criação de um construtur secundário utiliza-se o "init"
     // portanto, é executado antes de todo o codigo
     init {
         println("Usuário criado !!!")
     }
+
+    private val obj = TaskObject()
+
     override fun adicionarTarefa() {
-        print("Título: ")
-        val title = readln()
-        print("Descrição: ")
-        val description = readln()
-        print("Data de vencimento(DIA/MES/ANO): ")
-        val dueDate: Triple<Int, Int, Int> = Triple(
-            readLine()?.padStart(2, '0')?.toIntOrNull() ?: 0,
-            readLine()?.padStart(2, '0')?.toIntOrNull() ?: 0,
-            readLine()?.padStart(4, '0')?.toIntOrNull() ?: 0
-        )
-        println("Status: ")
-        val status = readln().toBoolean()
-        taskList.add(Task(title,description,dueDate,status))
-        println()
-        print("Tempo de conclução: ")
-        tempoDeVencimento(title)
-        println()
+        obj.adicionarTarefa()
     }
 
-
-
     override fun mostrarTarefas() {
-        for (i in taskList){
-            println(DadosTask(i!!.title,i.description,i.duaDate,i.status))
-        }
+        obj.mostrarTarefas()
     }
 
     override fun editarTarefa() {
@@ -51,14 +33,14 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
     override fun filterTask(option: Int) {
         if(option == 1) {
             // Filtro ansioso
-            for (objeto in taskList.filter { it!!.status }) {
+            for (objeto in obj.taskList.filter { it!!.status }) {
                 print("${objeto!!.title} - ")
             }
             println()
         }
         else {
             //Filtro preguiçoso "asSequence()"
-            for (objeto in taskList.asSequence().filter { !it!!.status }){
+            for (objeto in obj.taskList.asSequence().filter { !it!!.status }){
                 println("${objeto!!.title} - ")
             }
         }
@@ -73,24 +55,14 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
     }
 
     override fun tempoDeVencimento(titulo: String): Triple<Int, Int, Int> {
-        for (objeto in taskList){
-            if (objeto!!.title == titulo){
-                var dataInicio: Triple<Int,Int,Int> = Triple(objeto.dataInicio.dayOfMonth,objeto.dataInicio.monthValue,objeto.dataInicio.year)
-                var (diaI,mesI,anoI) = dataInicio
-                var (diaF,mesF,anoF) = objeto.duaDate
-                var diasParaVencimento: Triple<Int,Int,Int> = Triple(diaI - diaF,mesI - mesF, anoI- anoF)
-                println("${kotlin.math.abs(diasParaVencimento.first)} dia(s),${kotlin.math.abs(diasParaVencimento.second)} messes, e ${kotlin.math.abs(diasParaVencimento.third)} ano(s)")
-                return diasParaVencimento
-            }
-        }
-        return Triple(0,0,0)
+        return obj.tempoDeVencimento(titulo)
     }
 
     override fun concluir() {
         println("Qual tarefa deseja concluir?")
         mostrarTarefas()
         val tarefaNome = readln()
-        for (i in taskList){
+        for (i in obj.taskList){
             if (i!!.title == tarefaNome){
                 if(!i.status){
                     i.status = true
