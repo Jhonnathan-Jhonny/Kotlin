@@ -29,8 +29,7 @@ fun filterMenu(user: TaskManager){
     println("Filtros Disponíveis: ")
     println("1- Tarefas incompletas.")
     println("2- Tarefas Ccompletas.")
-    var option = readlnOrNull()?.toInt()
-    when(option){
+    when(val option = readlnOrNull()?.toInt()){
         1 -> user.filterTask(option)
         2 -> user.filterTask(option)
         else -> println("ERRO!!! Tente novamente.")
