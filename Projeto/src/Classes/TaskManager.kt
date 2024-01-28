@@ -30,7 +30,28 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
     }
 
     override fun editarTarefa() {
-        TODO("Not yet implemented")
+        if (listaTarefa().isNotEmpty()){
+            println("Qual tarefa deseja editar?")
+            mostrarTarefas()
+            val option = readlnOrNull()
+            loop@for (i in listaTarefa()){
+                if (option == i!!.title){
+                    //Editar cada variável de option
+
+                    println("Deseja editar mais alguma tarefa? ")
+                    println("1 - sim \n 2 - não")
+                    val editarNovamente = readlnOrNull()!!.toInt()
+                    //Verificar se deseja editar mais alguma tarefa
+                    if (editarNovamente == 1)break@loop
+                    else return
+                }
+            }
+            println("Trefa não encontrada!")
+        }
+        else{
+            println("Nenhuma tarefa para ser editada!")
+        }
+
     }
 
 

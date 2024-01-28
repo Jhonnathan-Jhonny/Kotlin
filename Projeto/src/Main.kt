@@ -18,6 +18,7 @@ fun mainMenu(user: TaskManager){
             2 -> user.tasksWithLetters { letra:String -> user.listaTarefa().filter {  it!!.title.contains(letra) } }
             3 -> user.mostrarTarefas()
             4-> user.concluir()
+            5 -> user.editarTarefa()
             6 -> user.delete()
             7 -> filterMenu(user)
             else -> break
@@ -34,7 +35,6 @@ fun filterMenu(user: TaskManager){
         2 -> user.filterTask(option)
         else -> println("ERRO!!! Tente novamente.")
     }
-
 }
 
 fun main() {

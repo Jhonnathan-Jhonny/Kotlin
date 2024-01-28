@@ -29,6 +29,10 @@ class TaskObject {
 
 
     fun mostrarTarefas() {
+        if (taskList.isEmpty()){
+            println("Nenhuma tarefa cadastrada!")
+            return
+        }
         for (i in taskList){
             println(DadosTask(i!!.title,i.description,i.duaDate,i.status))
         }
