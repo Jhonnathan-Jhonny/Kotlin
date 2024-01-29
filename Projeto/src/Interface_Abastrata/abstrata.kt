@@ -4,9 +4,9 @@ import Classes.Enum.StatusTask
 import java.time.LocalDate
 
 abstract class TaskBase(
-    val title: String,
-    val description: String,
-    val duaDate: Triple<Int,Int,Int>,
+    var title: String,
+    var description: String,
+    var duaDate: Triple<Int,Int,Int>,
     var status: StatusTask = StatusTask.PENDENTE
 ){
     init {

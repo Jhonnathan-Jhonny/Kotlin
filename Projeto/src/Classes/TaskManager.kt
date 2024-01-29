@@ -33,16 +33,31 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
         if (listaTarefa().isNotEmpty()){
             println("Qual tarefa deseja editar?")
             mostrarTarefas()
-            val option = readlnOrNull()
+            var option = readlnOrNull()
             loop@for (i in listaTarefa()){
                 if (option == i!!.title){
                     //Editar cada variável de option
-
+                    println("Data de vencimento: ")
+                    println("Dia")
+                    val dia = readln().toInt()
+                    println("Mês")
+                    val mes = readln().toInt()
+                    println("Ano")
+                    val ano = readln().toInt()
+                    i.duaDate = Triple(dia,mes,ano)
+                    println("Descrição: ")
+                    i.description = readlnOrNull().toString()
+                    println("Titulo: ")
+                    i.title = readlnOrNull().toString()
                     println("Deseja editar mais alguma tarefa? ")
                     println("1 - sim \n 2 - não")
                     val editarNovamente = readlnOrNull()!!.toInt()
                     //Verificar se deseja editar mais alguma tarefa
-                    if (editarNovamente == 1)break@loop
+                    if (editarNovamente == 1){
+                        println("Qual tarefa deseja editar?")
+                        mostrarTarefas()
+                        option = readlnOrNull()
+                    }
                     else return
                 }
             }
@@ -51,7 +66,6 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
         else{
             println("Nenhuma tarefa para ser editada!")
         }
-
     }
 
 
@@ -73,7 +87,8 @@ open class TaskManager(title: String, description: String, duaDate: Triple<Int, 
     }
 
     // Filtrando as tarefas que tenham aquela letra, e passando o filtro como um lambda
-    override fun tasksWithLetters(filtro: (String) -> List<Task?>) {
+    //Inline serve para substituir o lambda, utilizando as instruções dentro dele
+    inline fun tasksWithLetters(filtro: (String) -> List<Task?>) {
         var escolha= readln()
         for (objeto in filtro(escolha)){
             println("${objeto!!.title} - ")
