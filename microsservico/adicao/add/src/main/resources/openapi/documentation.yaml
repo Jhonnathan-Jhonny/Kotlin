@@ -1,0 +1,82 @@
+openapi: "3.1.0"
+info:
+  title: "com_example_add API"
+  description: "com_example_add API"
+  version: "1.0.0"
+servers:
+- url: "https://com_example_add"
+paths:
+  /api/calculator/add:
+    post:
+      description: ""
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CalculationRequest"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/CalculationResponse"
+  /session/increment:
+    get:
+      description: ""
+      responses:
+        "200":
+          description: "OK"
+          content:
+            text/plain:
+              schema:
+                type: "string"
+              examples:
+                Example#1:
+                  value: ""
+  /:
+    get:
+      description: ""
+      responses:
+        "200":
+          description: "OK"
+          content:
+            text/plain:
+              schema:
+                type: "string"
+              examples:
+                Example#1:
+                  value: "Hello World!"
+  /json/kotlinx-serialization:
+    get:
+      description: ""
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Map_String"
+components:
+  schemas:
+    CalculationRequest:
+      type: "object"
+      properties:
+        operand1:
+          type: "number"
+          format: "double"
+        operand2:
+          type: "number"
+          format: "double"
+    CalculationResponse:
+      type: "object"
+      properties:
+        result:
+          type: "number"
+          format: "double"
+    Map:
+      type: "object"
+      properties: {}
+    Map_String:
+      type: "string"
