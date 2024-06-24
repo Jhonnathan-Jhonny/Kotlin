@@ -1,41 +1,28 @@
-val ktor_version: String by project
-val kotlin_version: String by project
-val logback_version: String by project
-
 plugins {
-    kotlin("jvm") version "1.9.24"
-    id("io.ktor.plugin") version "2.3.11"
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.24"
+    kotlin("jvm") version "1.8.20" // Update to a more recent version of Kotlin
+    id("com.github.johnrengelman.shadow") version "7.1.0" // Ensure the plugin is also updated
 }
 
 group = "com.example"
-version = "0.0.1"
-
-application {
-    mainClass.set("io.ktor.server.tomcat.EngineMain")
-
-    val isDevelopment: Boolean = project.ext.has("development")
-    applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
-}
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
-    implementation("io.ktor:ktor-server-sessions-jvm:$ktor_version")
-    implementation("io.ktor:ktor-server-content-negotiation-jvm:$ktor_version")
-    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:$ktor_version")
-    implementation("io.ktor:ktor-server-tomcat-jvm:$ktor_version")
-    implementation("ch.qos.logback:logback-classic:$logback_version")
-    testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+    implementation(kotlin("stdlib"))
+    implementation("com.github.ajalt.clikt:clikt:3.2.0")
+    implementation("org.jetbrains.exposed:exposed-core:0.33.1")
+    implementation("org.jetbrains.exposed:exposed-dao:0.33.1")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.33.1")
+    implementation("org.xerial:sqlite-jdbc:3.36.0.3")
+    implementation("org.slf4j:slf4j-simple:1.7.32")
+    implementation("com.github.ajalt.mordant:mordant:2.0.0-beta2")
+}
 
-    implementation("io.ktor:ktor-client-json-jvm:$ktor_version")
-    implementation("io.ktor:ktor-client-core-jvm:$ktor_version")
-    implementation("io.ktor:ktor-client-serialization-jvm:$ktor_version")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
-    implementation("io.ktor:ktor-server-netty:$ktor_version")
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "MainKt"
+    }
 }

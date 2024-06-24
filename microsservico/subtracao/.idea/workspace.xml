@@ -5,89 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b06a7eda-671b-477e-b743-770efcd14ad6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/divisao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/src/main/kotlin/com/example/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/src/main/kotlin/com/example/plugins/Routing.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/src/main/kotlin/com/example/plugins/Security.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/src/main/kotlin/com/example/plugins/Serialization.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/src/main/resources/application.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../divisao/divide/src/test/kotlin/com/example/ApplicationTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/multiplicacao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/src/main/kotlin/com/example/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/src/main/kotlin/com/example/plugins/Routing.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/src/main/kotlin/com/example/plugins/Security.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/src/main/kotlin/com/example/plugins/Serialization.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/src/main/resources/application.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multiplicacao/multiply/src/test/kotlin/com/example/ApplicationTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/subtracao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/src/main/kotlin/com/example/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/src/main/kotlin/com/example/plugins/Routing.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/src/main/kotlin/com/example/plugins/Security.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/src/main/kotlin/com/example/plugins/Serialization.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/src/main/resources/application.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subtract/src/test/kotlin/com/example/ApplicationTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adicao/microsservicoADD/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../adicao/add/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pratica-ArraysColecoes/src/DayPart.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pratica-ArraysColecoes/src/Event.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adicao/add/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../adicao/add/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adicao/add/src/main/kotlin/com/example/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../adicao/add/src/main/kotlin/com/example/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../divisao/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../divisao/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pratica-ArraysColecoes/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pratica-ArraysColecoes/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pratica-ArraysColecoes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pratica-ArraysColecoes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pratica-ArraysColecoes/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../pratica-ArraysColecoes/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,36 +43,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2gatuA6PZYnJVZeIJ3mTqAgzEgo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build subtract.executor": "Run",
-    "Kotlin.ApplicationKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jjrrj/OneDrive/Documents/GitHub/Kotlin/microsservico/subtracao",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build subtract.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jjrrj/OneDrive/Documents/GitHub/Kotlin/microsservico/subtracao&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\jjrrj\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\jjrrj\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -161,6 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1715947735796</updated>
       <workItem from="1715947736803" duration="928000" />
+      <workItem from="1717671512436" duration="98000" />
+      <workItem from="1717671651516" duration="136000" />
     </task>
     <servers />
   </component>

@@ -5,28 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c6934e5-8e63-47b7-8306-463132deb644" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../microsservico/adicao/add/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DayPart.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Event.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microsservico/adicao/add/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/adicao/add/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microsservico/adicao/add/src/main/kotlin/com/example/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/adicao/add/src/main/kotlin/com/example/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microsservico/divisao/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/divisao/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microsservico/subtracao/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/subtracao/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microsservico/subtracao/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/subtracao/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2g9TqbNZ4tlf4h9feQKu5xmdnxD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.testDocker.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -36,6 +64,50 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jjrrj\OneDrive\Documents\GitHub\Kotlin\pratica-ArraysColecoes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="pratica-ArraysColecoes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="testDocker" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="test" />
+          <option name="sourceFilePath" value="src/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.testDocker" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -56,6 +128,15 @@
       <workItem from="1715188715814" duration="120000" />
       <workItem from="1715188845755" duration="2090000" />
       <workItem from="1715202534182" duration="11000" />
+      <workItem from="1716030972269" duration="2061000" />
+      <workItem from="1716033466033" duration="37000" />
+      <workItem from="1716203650920" duration="2457000" />
+      <workItem from="1716371774582" duration="85000" />
+      <workItem from="1716371871096" duration="1177000" />
+      <workItem from="1716376574449" duration="39000" />
+      <workItem from="1716397979844" duration="584000" />
+      <workItem from="1716483357026" duration="603000" />
+      <workItem from="1718640047149" duration="741000" />
     </task>
     <servers />
   </component>
