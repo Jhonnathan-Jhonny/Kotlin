@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c6934e5-8e63-47b7-8306-463132deb644" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../microsservico/adicao/add/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DayPart.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Event.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microsservico/adicao/add/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/adicao/add/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microsservico/adicao/add/src/main/kotlin/com/example/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/adicao/add/src/main/kotlin/com/example/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microsservico/divisao/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/divisao/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microsservico/subtracao/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/subtracao/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microsservico/subtracao/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../microsservico/subtracao/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="4c6934e5-8e63-47b7-8306-463132deb644" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,6 +125,7 @@
       <workItem from="1716397979844" duration="584000" />
       <workItem from="1716483357026" duration="603000" />
       <workItem from="1718640047149" duration="741000" />
+      <workItem from="1719615444208" duration="297000" />
     </task>
     <servers />
   </component>
